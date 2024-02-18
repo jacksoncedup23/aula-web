@@ -1,0 +1,448 @@
+/*
+ * CSS do site "Zabot Restaurante"
+ */
+ :root {
+	--color0: #F20544 ;
+	--color1: #BF0015;
+	--color2: #011126 ;
+	--color3: #1D79F2 ;
+	--color4: #1B8EF2 ;
+	--color5: #B6DBF2 ;
+	--color6: #9C3D3D ;
+ }
+
+/* Configuração da página  */
+body {
+
+    /** Muda a cor do fundo da página **/
+    background-color: var(--color2);
+
+    /** Fonte **/
+    font-family: Candara, Helvetica, sans-serif; 
+
+    /** Margem zerada **/
+    margin: 0;
+}
+
+
+
+/*************************************** TOPO DO SITE ***************************************/
+
+
+
+
+/** Pega a DIV principal do topo da página, com logo, tiutlo e menu **/
+#header {
+
+    /** Preenche toda a lagura da página **/
+    width: 100%;
+
+    /** Posiciona o elemento em relação ao corpo da página **/
+    height: 137px;
+
+    /** Margem interna **/
+    padding-top: 10px;
+	position: sticky;
+	
+}
+
+/** Pega a parte de cima da DIV principal, com loco e título da página **/
+#logo {
+    /** largura capaz de armazenar logo e título **/
+    width: 525px;
+
+    /** Altura capaz de armazenar logo e título **/    
+    height: 100px;
+
+    /** Posicionamento relativo para não encavalar com as outras DIVs **/
+    position: relative;
+
+    /** Centraliza a DIV **/
+    left: 50%;
+    margin-left: -312px;
+}
+
+/** Logo do Site **/
+#logoImg {
+
+    /** Tamanho **/
+    width: 100px;
+    height: 100px;
+
+    /** Posição do logo **/
+    float: left;
+	margin-right: 10px;
+}
+
+#tituloLogo {
+    
+    /** Posição **/
+    float: right;
+
+    /** Cor do texto **/
+    color: var(--color1);
+
+    /** Posicionamento - tamanho da linha **/
+    line-height: 100px;
+
+    /** Sem margem**/
+    margin: 0;
+
+    /** Tamanho da fonte **/
+    font-size: 30px;
+}
+
+/** Pega a DIV do menu principal id = "menu" **/
+#menu {
+
+    /** Tamanho **/
+    width: 100%;
+	height: 30px;
+	position: sticky;
+
+    /** Cor do fundo **/
+    background-color: var(--color1);
+}
+
+/** Pega a lista ordenada que compõe o menu **/
+.listaMenu {
+    
+    /** Largura **/
+    width: 550px;
+
+    /** Posicao  **/
+    position: relative;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: 7px;
+}
+
+/** Pega os elementos li do menu com a classe "listaMenu" **/
+.listaMenu li {
+
+    /** Mantém os elementos em uma linha **/
+    display: inline-block;
+}
+
+/** Pega os elementos li a com a classe "listaMenu" **/
+.listaMenu li a {
+
+    /** Remove o sublinhado de links **/
+    text-decoration: none;
+
+    /** Configura o tamanho de 50px para os itens de link da lista **/
+    height: 50px;
+
+    /** Posicionamento**/
+    line-height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/** Pega os elementos li a quando estão normal e depois de clicados **/
+.listaMenu li a:link,
+.listaMenu li a:visited {
+
+    /** Muda a cor do texto dos links para branco **/
+    color: white;
+}
+
+/** Pega os elementos li a quando o mouse passa em cima **/
+.listaMenu li a:hover {
+
+    /** Muda a cor do link **/
+    color: var(--color2);
+	/*rgb(210,165,108);*/
+}
+
+/** Pega o link com id "menuAtual" **/
+#menuAtual:link,
+#menuAtual:visited {
+
+    /** Muda estilo para letra maiúscula **/
+    text-transform: uppercase;
+
+    /** Deixa a fonte em negrito **/
+    font-weight: bold;
+}
+
+
+
+/*********************************** CONTEÚDO PRINCIPAL ******************************************/
+
+
+#content {
+
+    /** Largura  **/
+    width: 700px;
+    
+    /** Cor de fundo da div principal **/
+    background-color: var(--color5);
+
+    /** Posicionando os elementos **/
+    position: relative;
+    left: 50%;
+    margin-left: -380px;
+}
+
+/** Pega a div do Banner  **/
+#promotionBanner {
+
+    /** Altura e margem **/
+    height: 350px;
+	margin-top: 10px;
+
+    /** Imagem do Banner  **/
+    background-image: url('images/promocao.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 130%;
+}
+
+/** Pega o header principal da promoção com id "promocaoH1" **/
+#promocaoH1 {
+
+    /** Cor da fonte **/
+    color: var(--color2)	;
+
+    /** Tamanho de fonte **/
+    font-size: 45px;
+    
+    /** Remove a margem **/
+    margin: 0;
+    
+    /** Posicionando o elemento **/
+    margin-left: 20px;
+    position: absolute;
+
+    /** Aplica sombra ao texto **/
+    text-shadow: 2px 2px 4px var(--color3);
+}
+
+/** Pega o header com o preço no banner com id "promocaoValor" **/
+#promocaoText {
+
+    /** Cor da fonte  **/
+    color: white;
+	background-color: rgba(10,23,55,0.5);
+
+	text-align: center;
+    /** Tamanho da fonte **/
+    font-size: 24px;
+
+    /** Remove a margem  **/
+    margin: 0;
+
+    /** Aplica sombra ao texto **/
+    text-shadow: 2px 2px 4px #e50021;
+
+    /** Posiciona os elementos **/
+    left: 200px;
+    top: 250px;
+    position: relative;
+
+    /** Largura **/
+    width: 500px;
+}
+
+/** Pega o header com o preço no banner com id "promocaoValor" **/
+#promocaoValor {
+
+    /** Cor da fonte  **/
+    color: white;
+
+    /** Tamanho da fonte **/
+    font-size: 46px;
+
+    /** Remove a margem  **/
+    margin: 0;
+
+    /** Aplica sombra ao texto **/
+    text-shadow: 2px 2px 4px var(--color4);
+
+    /** Posiciona os elementos **/
+    left: 400px;
+    top: 260px;
+    position: relative;
+
+    /** Largura **/
+    width: 500px;
+}
+
+
+#tituloConteudo {
+    /** Define a cor **/
+    color: var(--color2);
+        
+    /** Alinha ao centro **/
+    text-align: center;
+    
+    /** Reduz a margem inferior **/
+    margin-bottom: 10px;
+}
+
+/** Pega tabela dentro da div com id "areaProdutos" **/
+#areaProdutos table {
+    /** Espaço entre as células **/    
+    border-spacing: 25px;
+    border-collapse: separate;
+
+    /** Alinha ao centro **/
+    text-align: center;
+}
+
+/** Pega td da div com id "areaProdutos" **/
+#areaProdutos td {    
+
+    /** Largura das células **/
+    width: 250px;
+    
+    /** Cor do texto   **/
+    color: var(--color1);
+
+    /** Tamanho de fonte   **/
+    font-size: 20px;
+}
+
+/** Pega as imagens da area de produtos **/
+#areaProdutos td img {
+
+    /** Configura um tamanho padrão para as imagens dos produtos **/
+    width: 150px;
+    height: 150px;
+
+    /** Separa a imagem do título acima desta **/
+    margin-top: 5px;
+
+    /** Arredonda as fotos **/
+    border-radius: 100%;
+    
+    /** Borda da foto  **/
+    border: 2px solid var(--color1);
+	transition:all 0.5s ease;
+}
+
+#areaProdutos td img:hover {
+
+    /** Configura um tamanho padrão para as imagens dos produtos **/
+    width: 250px;
+    height: 250px;
+
+    /** Separa a imagem do título acima desta **/
+    margin-top: 5px;
+
+    /** Arredonda as fotos **/
+    border-radius: 100%;
+    
+    /** Borda da foto  **/
+    border: 2px solid var(--color1);
+	
+	transition:all 0.3s ease;
+}
+
+/** Seleciona elementos anotados com a classe "tituloProduto" **/
+.tituloProduto {
+    
+    /** Faz com que a fonte do elemento fique em negrito **/
+    font-weight: bold;
+    
+    /** Remove a margem padrão dos elementos P **/
+    margin: 0;
+}
+
+/** Seleciona elementos anotados com a classe "precoProduto" **/
+.precoProduto {
+
+    /** Remove a margem padrão dos elementos P **/
+    margin: 0;
+}
+
+/** Seleciona a div com o íncone e o telefone de entrega (id "entrega") **/
+#entrega {
+
+    /** Configura o posicionamento como fixo. Desta forma, o elemento
+    ficará posicionado sempre relativo a área da tela do browser (viewport) **/
+    position: fixed;
+
+    /** Posiciona o elemento 30px em relação a margem inferior **/
+    bottom: 30px;
+
+    /** Posiciona o elemento 10px em relação a margem direita **/
+    right: 10px;
+
+    /** Define um tamanho para o elemento **/
+    height: 100px;
+    width: 300px;
+}
+
+/** Seleciona os elementos de imagem com id "entrega" **/
+#entrega img {
+
+    /** Transforma o elemento num círculo **/
+    border-radius: 50%;
+
+    /** Define uma borda para o elemento **/
+    border: 3px solid var(--color4);
+}
+
+/** Seleciona elementos com id "tel" **/
+#tel {
+
+    /** Posição absoluta **/
+    position: absolute;
+
+    /** Posição horizontal   **/
+    left: 120px;
+
+    /** Altura   **/
+    height: 75px;
+
+    /** Cor de fundo  **/
+    background-color: var(--color4);
+
+    /** Cor do texto   **/    
+    color: white;
+
+    /** Afasta o elemento do topo em 13px **/
+    margin-top: 13px;
+
+    /** Adiciona borda interna ao elemento no tamanho de 10px **/
+    padding: 10px;
+
+    /** Remove a borda interna da parte inferior  **/
+    padding-bottom: 0;
+
+    /** Arredonda um pouco os cantos da div **/
+    border-radius: 15px;
+}
+
+/** Pega os elementos h4 com id "tel" **/
+#tel h4 {
+
+    /** Remove as margens padrão do H4 **/
+    margin: 0;
+
+    /** Define um tamanho de fonte para o H4 em 28px **/
+    font-size: 28px;
+}
+
+/** Pega os elementos h5 com id "tel" **/
+#tel h5 {
+
+    /** Remove as margens padrão do H5 **/
+    margin: 0;
+
+    /** Adiciona uma pequena margem na parte superior do h5 **/
+    margin-top: 10px;
+}
+
+/** Pega o elemento a com id "tel" **/
+#tel a {
+
+    /** Define a cor do link como branco **/
+    color: white;
+
+    /** Remove o underline do link **/
+    text-decoration: none;
+}
+
+/****************************************** RODAPÉ ************************************/
