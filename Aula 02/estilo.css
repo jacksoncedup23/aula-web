@@ -1,22 +1,40 @@
 body {
-  padding: 10px;
+  margin: 0;
   font-style: normal;
   background-color: #f9f0b7;
 }
 
 .titulo {
+  position: sticky;
+  top: 0px;
   text-align: center;
-  width: 50%;
-  padding: 30px 0;
-  margin-left: 25%;
-  font-size: 36px;
+  width: 60%;
+  padding: 10px 0;
+  margin: 0 20%;
+  margin-top: 30px;
+  font-size: 32px;
+  font-family: "Times New Roman";
+  color: silver;
   background-color: #766862;
+  
+}
+.subtitulo {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 95%;
+  padding: 0 0;
+  border-bottom: 1px solid #312e2e;
+  color: black;
+  font-weight: bold;
 }
 .conteudo {
-  padding-left: 30px;
+  text-align: left;
+  width: 44%;
+  padding: 20px 1%;
+  margin: 0 27%;
+  color: #312e2e;
   background-color: #92bf9f;
-  width: 40%;
-  margin: 0 30%;
 }
 
 .citacao {
@@ -25,17 +43,16 @@ body {
 
 .frase {
   margin-left:20px;
-  width:500px;
   text-align: justify; 
 }
 
 .rodape {
-  padding-top: 10px;
-  width: 60%;
+  padding: 20px 0;
   text-align: left; 
   font-style: normal;
-  border-top: 1px solid #ccc;
   text-align: center;
+  background-color: #e3d49c;
+  color: #312e2e;
 }
 
 address {
