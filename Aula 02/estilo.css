@@ -1,8 +1,22 @@
 body {
   padding: 10px;
+  font-style: normal;
+  background-color: #f9f0b7;
+}
+
+.titulo {
+  text-align: center;
+  width: 50%;
+  padding: 30px 0;
+  margin-left: 25%;
+  font-size: 36px;
+  background-color: #766862;
 }
 .conteudo {
   padding-left: 30px;
+  background-color: #92bf9f;
+  width: 40%;
+  margin: 0 30%;
 }
 
 .citacao {
@@ -16,8 +30,14 @@ body {
 }
 
 .rodape {
-  margin-left:20px;
-  width:500px;
-  text-align: justify; 
+  padding-top: 10px;
+  width: 60%;
+  text-align: left; 
+  font-style: normal;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+address {
   font-style: normal;
 }
