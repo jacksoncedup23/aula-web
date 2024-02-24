@@ -1,0 +1,23 @@
+body {
+  padding: 10px;
+}
+.conteudo {
+  padding-left: 30px;
+}
+
+.citacao {
+  padding-bottom: 20px;
+}
+
+.frase {
+  margin-left:20px;
+  width:500px;
+  text-align: justify; 
+}
+
+.rodape {
+  margin-left:20px;
+  width:500px;
+  text-align: justify; 
+  font-style: normal;
+}
