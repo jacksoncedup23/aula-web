@@ -1,64 +1,60 @@
-
-/* Cores */
-:root {
-  --color1: #7c5d15;
-  --color2: #f4b125;
-  --color3: #b40c0c;
-  --color4: #80776f;
-
-
-}
-html {
-  height: 100%;
-  width: 100%;
-}
-
 body {
-  background-color: var(--color4);
-}
-.cabecalho {
-  /* Styles for cabecalho class */
-
-  text-align: center;
-  padding: 30px 0;
-  color: var(--color3);
-  background-color: var(--color2);
-}
-
-.escolha_cardapio{
-  /* Styles for escolha_cardapio class */
-  font-size: 18pt;
-  text-align: center;
-  
-  width: 60%;
-  margin-left: 20%;
-  background-color: var(--color3);
-
-
-}
-
-fieldset{
-  border: 0px;
-}
-.secao {
-  /* Styles for secao class */
-  font-size: 11pt;
-  padding: 10px;
-  border: 1px var(--color2) solid;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.secao input{
-  /* Styles for secao class */
-}
-
-.inputs {
-
+  margin: 0;
+  font-style: normal;
+  background-color: #f9f0b7;
 }
 
 .titulo {
-  /* Styles for titulo class */
-  font-size: 14pt;
+  position: sticky;
+  top: 0px;
+  text-align: center;
+  width: 60%;
+  padding: 10px 0;
+  margin: 0 20%;
+  margin-top: 30px;
+  font-size: 32px;
+  font-family: "Times New Roman";
+  color: silver;
+  background-color: #766862;
+  
+}
+.subtitulo {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 95%;
+  padding: 0 0;
+  border-bottom: 1px solid #312e2e;
+  color: black;
   font-weight: bold;
+}
+.conteudo {
+  text-align: left;
+  width: 44%;
+  padding: 20px 1%;
+  margin: 0 27%;
+  color: #312e2e;
+  background-color: #92bf9f;
+}
+
+.citacao {
+  padding-bottom: 20px;
+}
+
+.frase {
+  margin-left:20px;
+  text-align: justify; 
+}
+
+.rodape {
+  padding: 20px 0;
+  text-align: left; 
+  font-style: normal;
+  text-align: center;
+  background-color: #e3d49c;
+  color: #312e2e;
+}
+
+address {
+  font-style: normal;
 }
