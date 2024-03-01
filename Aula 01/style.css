@@ -1,0 +1,64 @@
+
+/* Cores */
+:root {
+  --color1: #7c5d15;
+  --color2: #f4b125;
+  --color3: #b40c0c;
+  --color4: #80776f;
+
+
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--color4);
+}
+.cabecalho {
+  /* Styles for cabecalho class */
+
+  text-align: center;
+  padding: 30px 0;
+  color: var(--color3);
+  background-color: var(--color2);
+}
+
+.escolha_cardapio{
+  /* Styles for escolha_cardapio class */
+  font-size: 18pt;
+  text-align: center;
+  
+  width: 60%;
+  margin-left: 20%;
+  background-color: var(--color3);
+
+
+}
+
+fieldset{
+  border: 0px;
+}
+.secao {
+  /* Styles for secao class */
+  font-size: 11pt;
+  padding: 10px;
+  border: 1px var(--color2) solid;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.secao input{
+  /* Styles for secao class */
+}
+
+.inputs {
+
+}
+
+.titulo {
+  /* Styles for titulo class */
+  font-size: 14pt;
+  font-weight: bold;
+}
