@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cardápio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="cabecalho">
+    <h1>Cardápio</h1>
+  </div>
+
+  <div class="escolha_cardapio">
+    <!-- Formulário -->
+    <form action="#" id="frm_cardapio" method="post">
+      <fieldset>
+        <legend>Escolha o cardápio:</legend>
+        <div class="secao">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" placeholder="Informe o seu nome:"><br>
+          <label for="fone">Telefone:</label>
+          <input type="tel" name="fone" placeholder="Informe o seu telefone:" pattern="([0-9]{2})[0-9]{1} [0-9]{4}-[0-9]{4}"><br>
+          <label for="nr_pessoas">Número de pessoas:</label>
+          <input type="number" name="nr_pessoas" placeholder="Informe quantidade de pessoas" min="1" max="15"">
+          <br>
+        </div>
+        <div class="secao">
+          <div class="titulo">Horário</div>
+          <label for="almoco">Almoço</label>
+          <input type="radio" id="almoco" name="tipo_refeicao" value="Almoço"><br>
+          <label for="jantar">Jantar</label>
+          <input type="radio" id="jantar" name="tipo_refeicao" value="Jantar"><br>
+        </div>
+        <!------------------------------------>
+        <div class="secao">
+          <div class="titulo">Preferências dietéticas</div>
+          <label for="s_gluten">Sem glúten</label>
+          <input type="checkbox" id="s_gluten" name="pref_diet" value="s_gluten"><br>
+          <label for="s_lactose">Sem lactose</label>
+          <input type="checkbox" id="s_lactose" name="pref_diet" value="s_lactose"><br>
+          <label for="vegetariano">Vegetariano</label>
+          <input type="checkbox" id="vegetariano" name="pref_diet" value="vegetariano"><br>
+          <label for="vegano">Vegano</label>
+          <input type="checkbox" id="vegano" name="pref_diet" value="vegano"><br>
+        </div>
+        <!------------------------------------>
+        <div class="secao">
+          <div class="titulo">Entradas</div>
+          <label for="ent_bolinho">Bolinho de Macaxeira</label>
+          <input type="radio" id="ent_bolinho" name="entrada" value="ent_bolinho"><br>
+          <label for="ent_brusc">Bruscheta</label>
+          <input type="radio" id="ent_brusc" name="entrada" value="ent_brusc"><br>
+          <label for="ent_salada">Salada</label>
+          <input type="radio" id="ent_salada" name="entrada" value="ent_salada"><br>
+        </div>
+        <!------------------------------------>
+        <div class="secao">
+          <div class="titulo">Prato principal</div>
+          <label for="princ_mignon">Filé Mignon ao Molho de Mostarda</label>
+          <input type="radio" id="princ_mignon" name="principal" value="princ_mignon"><br>
+          <label for="princ_frutos">Risoto de frutos do mar</label>
+          <input type="radio" id="princ_frutos" name="principal" value="princ_frutos"><br>
+          <label for="princ_feijoada">Feijoada</label>
+          <input type="radio" id="princ_feijoada" name="principal" value="princ_feijoada"><br>
+          <label for="princ_ravioli">Ravioli de bacalhau</label>
+          <input type="radio" id="princ_ravioli" name="principal" value="princ_ravioli"><br>
+        </div>
+        <!------------------------------------>
+        <div class="secao">
+          <div class="titulo">Acompanhamentos</div>
+          <label for="acomp_pure">Purê de batata</label>
+          <input type="radio" id="acomp_pure" name="acomp" value="acomp_pure"><br>
+          <label for="acomp_arroz">Arroz</label>
+          <input type="radio" id="acomp_arroz" name="acomp" value="acomp_arroz"><br>
+          <label for="acomp_legumes">Legumes</label>
+          <input type="radio" id="acomp_legumes" name="acomp" value="acomp_legumes"><br>
+        </div>
+        <!------------------------------------>
+        <div class="secao">
+          <div class="titulo">Sobremesas</div>
+          <label for="sobr_sorvete">Sorvete</label>
+          <input type="radio" id="sobr_sorvete" name="sobr" value="sobr_sorvete"><br>
+          <label for="sobr_petit">Petit Gateau</label>
+          <input type="radio" id="sobr_petit" name="sobr" value="sobr_petit"><br>
+          <label for="sobr_gelatina">Gelatina</label>
+          <input type="radio" id="sobr_gelatina" name="sobr" value="sobr_gelatina"><br>
+        </div>
+        <!------------------------------------>
+        <div class="secao">
+          <div class="titulo">Bebidas</div>
+          <div class="inputs">
+            <label for="beb_vinho">Vinho</label>
+            <input type="radio" id="beb_vinho" name="bebida" value="beb_vinho"><br>
+            <label for="beb_agua">Água</label>
+            <input type="radio" id="beb_agua" name="bebida" value="beb_agua"><br>
+            <label for="beb_refri">Refrigerante</label>
+            <input type="radio" id="beb_refri" name="bebida" value="beb_refri"><br>
+          </div>
+        </div>
+        <input type="button" id="enviar" value="Enviar"><br>
+      </fieldset>
+    </form>
+  </div>
+  
+</body>
+
+</html>
