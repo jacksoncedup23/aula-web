@@ -15,14 +15,18 @@ html {
 
 body {
   background-color: var(--color4);
+  
 }
 .cabecalho {
   /* Styles for cabecalho class */
 
   text-align: center;
-  padding: 30px 0;
-  color: var(--color3);
-  background-color: var(--color2);
+  padding: 10px 0;
+  font-size: 42pt;
+  font-family: "Kunstler Script",sans-serif;
+  color: var(--color2);
+  background-color: var(--color3);
+  
 }
 
 .escolha_cardapio{
@@ -32,33 +36,59 @@ body {
   
   width: 60%;
   margin-left: 20%;
-  background-color: var(--color3);
+  background-color: var(--color2);
 
 
+}
+input[type='text'],
+input[type='tel'],
+input[type='number']{
+  outline: none;
+  width: 100px;
 }
 
 fieldset{
   border: 0px;
 }
+
 .secao {
   /* Styles for secao class */
   font-size: 11pt;
   padding: 10px;
-  border: 1px var(--color2) solid;
+  border: 1px var(--color3) solid;
   border-radius: 10px;
   margin-bottom: 20px;
+  color: var(--color3);
 }
 
-.secao input{
+.secao-esq {
   /* Styles for secao class */
+  font-size: 11pt;
+  padding: 10px;
+  border: 1px var(--color3) solid;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 50%;
+  float: left;
+  color: var(--color3);
 }
 
-.inputs {
-
+.secao-dir {
+  /* Styles for secao class */
+  font-size: 11pt;
+  padding: 10px;
+  border: 1px var(--color3) solid;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 50%;
+  float: right;
+  color: var(--color3);
 }
 
-.titulo {
+.titulo, legend {
   /* Styles for titulo class */
-  font-size: 14pt;
+  font-size: 36pt;
   font-weight: bold;
+  color: var(--color3);
+  font-family: "Kunstler Script", sans-serif;
 }
